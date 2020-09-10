@@ -19,34 +19,44 @@
 
     document.getElementById("rockOne").addEventListener("click", function (){
         playerChoice = "rock";
-        console.log(playerChoice);
+        console.log('playerPicks' +playerChoice);
     })
 
     document.getElementById("scissorsOne").addEventListener("click", function (){
         playerChoice = "scissors";
-        console.log(playerChoice);
+        console.log('playerPicks' +playerChoice);
     })
 
     document.getElementById("paperOne").addEventListener("click", function (){
         playerChoice = "paper";
-        console.log(playerChoice);
+        console.log('playerPicks' +playerChoice);
 
     })
 
     document.getElementById("computerPick").addEventListener("click", function (){
         randomNumber= Math.floor((Math.random()*3)+1);
-        console.log(randomNumber);
+
         if (randomNumber == 1){
             computerChoice = 'rock';
-            console.log(computerChoice);
+            console.log('computerPicks' + computerChoice);
         }
         else if(randomNumber == 2){
             computerChoice = 'paper'
-            console.log(computerChoice);
+            console.log('computerPicks' + computerChoice);
         }
-        
+        else{
+            computerChoice = 'scissors'
+            console.log('computerPicks' + computerChoice);
+        }
+
+        if(computerChoice == playerChoice) {
+            console.log("Its a tie");
+        }
 
     })
+
+
+
 
 
 
