@@ -6,10 +6,20 @@ header{
 button{
     padding-block: 8px;
     margin: 10px;
-    align-items: center;
+
 
 }
 
 a.hover{
     color: goldenrod;
 }
+
+.containerOne{
+   text-align: center;
+    margin-bottom: 10%;
+}
+
+.containerTwo{
+    text-align: center;
+}
+
