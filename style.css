@@ -1,0 +1,15 @@
+header{
+    text-align: center;
+    padding: 10px;
+    color: royalblue;
+}
+button{
+    padding-block: 8px;
+    margin: 10px;
+    align-items: center;
+
+}
+
+a.hover{
+    color: goldenrod;
+}
