@@ -17,8 +17,17 @@
 const notification = document.querySelector('.Notification');
 const points = document.querySelector('.points');
 const buttons = document.querySelectorAll('button');
+const winnerPoints = [0,0];
 
+//added event listner to the buttons
+for (let i = 0; i > buttons.length; i++){
+    buttons[i].addEventListener("click", startGame);
+}
 
+function startGame(playerOne){
+    
+
+}
 
 
 
