@@ -2,9 +2,9 @@
 
 (function chooseONe(){
 
-    var decision = window.prompt("WHat level are you?")
+    var decision = window.prompt("Which level are you?")
     if (decision == "beginner") {
-        alert("Lets Begin!");
+        alert("Lets the games Begin!");
     }
     if (decision == "intermediate") {
         alert("Lets see what you can do!");
@@ -16,25 +16,34 @@
     let playerChoice = "";
     let computerChoice = "";
     let randomNumber = "";
+    let scoreComputer = "";
+    let scorePLayer = "";
+
+
+
 
     document.getElementById("rockOne").addEventListener("click", function (){
         playerChoice = "rock";
         console.log('playerPicks' +playerChoice);
+        document.getElementById("choice-player").innerText = "Player picks " + playerChoice;
     })
 
     document.getElementById("scissorsOne").addEventListener("click", function (){
         playerChoice = "scissors";
         console.log('playerPicks' +playerChoice);
+        document.getElementById("choice-player").innerText = "Player picks " + playerChoice;
     })
 
     document.getElementById("paperOne").addEventListener("click", function (){
         playerChoice = "paper";
         console.log('playerPicks' +playerChoice);
+        document.getElementById("choice-player").innerText = "Player picks " + playerChoice;
 
     })
 
     document.getElementById("computerPick").addEventListener("click", function (){
         randomNumber= Math.floor((Math.random()*3)+1);
+        document.getElementById("choice-computer").innerText = "computer picks " + computerChoice
 
         if (randomNumber == 1){
             computerChoice = 'rock';
@@ -53,7 +62,68 @@
             console.log("Its a tie");
         }
 
+        if (playerChoice=='scissors' && computerChoice=='paper'){
+            console.log('scissors');
+            scorePLayer++;
+            countingWins();
+
+        }
+        else if (playerChoice == "scissors" && computerChoice=="rock"){
+            console.log('rock');
+            scoreComputer++;
+            countingWins();
+        }
+
+         if(playerChoice=="paper" && computerChoice=="rock"){
+            console.log('paper');
+            scoreComputer++;
+            countingWins();
+
+        }
+        if(playerChoice=="paper" && computerChoice=="scissors"){
+            console.log('scissors');
+            scoreComputer++;
+            countingWins();
+        }
+        else if (playerChoice=='rock' && computerChoice=='paper'){
+            console.log('paper');
+            scorePLayer++;
+            countingWins();
+        }
+       // if(playerChoice=="paper" && computerChoice=="scissors"){
+       //     console.log('scissors');
+        //    scoreComputer++;
+            //countingWins();
+       // }
+        else if (playerChoice=="rock" && computerChoice=="scissors") {
+            console.log('rock');
+            scoreComputer++;
+            countingWins();
+        }
+
+        function countingWins(){
+            document.getElementById("target-comp").innerText = "Computer " + scoreComputer + " wins";
+            document.getElementById("target-you").innerText = " player " + scorePLayer + "wins";
+
+        }
+
+        document.getElementById("resetOne").addEventListener("click", function (){
+            scorePLayer = 0;
+            scoreComputer = 0;
+            document.getElementById("target-you").innerText = "player Score 0";
+            document.getElementById("target-comp").innerText = "computer Score 0";
+        })
+
+
+
+
+
+
+
+
     })
+
+
 
 
 
