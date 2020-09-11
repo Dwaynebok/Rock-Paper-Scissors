@@ -3,26 +3,65 @@ header{
     padding: 10px;
     color: royalblue;
 }
+
 button{
     padding-block: 8px;
     margin: 10px;
 
-
 }
 
-a.hover{
-    color: goldenrod;
-}
 
 .containerOne{
    text-align: center;
     margin-bottom: 10%;
+    color: royalblue;
+    border-radius: 30px;
 }
 
 .containerTwo{
     text-align: center;
+    border-radius: 30px;
+
 }
 
 body{
-    background-color: greenyellow;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, red , blue);
 }
+
+.scores{
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+
+
+}
+
+#rock , #paper , #scissors{
+    text-align: center;
+    vert-align: middle;
+    border-radius: 20px;
+    background: lightgrey;
+
+    width: 120px;
+    height: 42px;
+    font-size: 20px;
+    display: table-cell;
+
+
+}
+
+
+
+.resetOne{
+    align-content: center;
+    border-radius: 20px;
+    background: lightgrey;
+    width: 120px;
+    height: 42px;
+    font-size: 20px;
+}
+
+
+
+
