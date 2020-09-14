@@ -1,6 +1,6 @@
-//alert("lets get Ready to Rumble");
+alert("lets get Ready to Rumble");
 
-//chooseONe();
+chooseONe();
 
 function chooseONe() {
         var decision = window.prompt("Which level are you?")
