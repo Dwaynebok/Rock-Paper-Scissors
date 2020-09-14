@@ -1,3 +1,3 @@
-ttps://dwaynebok.github.io/Rock-Paper-Scissors/
+https://dwaynebok.github.io/Rock-Paper-Scissors/
 
 # Rock-Paper-Scissors
